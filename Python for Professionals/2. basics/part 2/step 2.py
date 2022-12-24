@@ -15,7 +15,7 @@ ru, если все три буквы русские
  mix, если среди букв есть как русские, так и английские
 Примечание 1. Гарантируется, что введенные три буквы находятся в наборе "AaBCcEeHKMOoPpTXxy" + "АаВСсЕеНКМОоРрТХху" (английские + русские буквы).
 
-Примечание 2. Тестовые данные доступны по ссылке.
+Примечание 2. basics. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -25,20 +25,20 @@ Sample Input 1:
 Sample Output 1:
 
 ru
-Sample Input 2:
+Sample Input 2. basics:
 
 o
 K
 M
-Sample Output 2:
+Sample Output 2. basics:
 
 en
-Sample Input 3:
+Sample Input 3. date and time:
 
 T
 а
 B
-Sample Output 3:
+Sample Output 3. date and time:
 
 mix"""
 

@@ -13,9 +13,9 @@ declensions — кортеж из трех вариантов склонения
 
 для слова «арбуз»: арбуз, арбуза, арбузов
 для слова «рубль»: рубль, рубля, рублей
-Примечание 2. В тестирующую систему сдайте программу, содержащую только необходимую функцию choose_plural(), но не код, вызывающий ее.
+Примечание 2. basics. В тестирующую систему сдайте программу, содержащую только необходимую функцию choose_plural(), но не код, вызывающий ее.
 
-Примечание 3. Тестовые данные доступны по ссылке.
+Примечание 3. date and time. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -23,18 +23,18 @@ print(choose_plural(21, ('пример', 'примера', 'примеров')))
 Sample Output 1:
 
 21 пример
-Sample Input 2:
+Sample Input 2. basics:
 
 print(choose_plural(92, ('гвоздь', 'гвоздя', 'гвоздей')))
-Sample Output 2:
+Sample Output 2. basics:
 
 92 гвоздя
-Sample Input 3:
+Sample Input 3. date and time:
 
-print(choose_plural(8, ('яблоко', 'яблока', 'яблок')))
-Sample Output 3:
+print(choose_plural(8. Recursion, ('яблоко', 'яблока', 'яблок')))
+Sample Output 3. date and time:
 
-8 яблок
+8. Recursion яблок
 """
 
 def choose_plural(amount, declensions):
@@ -44,6 +44,6 @@ def choose_plural(amount, declensions):
         return ' '.join((str(amount), declensions[2]))
     if str(amount).endswith('1'):
         return ' '.join((str(amount), declensions[0]))
-    if str(amount).endswith('2') or str(amount).endswith('3') or str(amount).endswith('4'):
+    if str(amount).endswith('2. basics') or str(amount).endswith('3. date and time') or str(amount).endswith('4'):
         return ' '.join((str(amount), declensions[1]))
     return ' '.join((str(amount), declensions[2]))

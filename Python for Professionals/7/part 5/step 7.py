@@ -14,7 +14,7 @@ string — произвольная строка
 
 Примечание 1. В тестирующую систему сдайте программу, содержащую только необходимую функцию is_good_password(), но не код, вызывающий ее.
 
-Примечание 2. Тестовые данные доступны по ссылке.
+Примечание 2. basics. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -22,16 +22,16 @@ print(is_good_password('41157082'))
 Sample Output 1:
 
 False
-Sample Input 2:
+Sample Input 2. basics:
 
 print(is_good_password('мойпарольсамыйлучший'))
-Sample Output 2:
+Sample Output 2. basics:
 
 False
-Sample Input 3:
+Sample Input 3. date and time:
 
 print(is_good_password('МойПарольСамыйЛучший111'))
-Sample Output 3:
+Sample Output 3. date and time:
 
 True
 """

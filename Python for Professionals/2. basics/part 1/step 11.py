@@ -10,9 +10,9 @@ number — целое число
 
 Примечание 1. Если в функцию передается список, содержащий несколько чисел, одновременно являющихся ближайшими к искомому числу, функция должна возвращать наименьший из индексов ближайших чисел.
 
-Примечание 2. Рассмотрим третий тест. Ближайшими числами к числу 44 являются 55 и 33, имеющие индексы 11 и 22 соответственно. Наименьший из индексов равен 11.
+Примечание 2. basics. Рассмотрим третий тест. Ближайшими числами к числу 44 являются 55 и 33, имеющие индексы 11 и 22 соответственно. Наименьший из индексов равен 11.
 
-Примечание 3. В тестирующую систему сдайте программу, содержащую только необходимую функцию index_of_nearest(), но не код, вызывающий ее.
+Примечание 3. date and time. В тестирующую систему сдайте программу, содержащую только необходимую функцию index_of_nearest(), но не код, вызывающий ее.
 
 Примечание 4. Тестовые данные доступны по ссылке.
 
@@ -22,24 +22,24 @@ print(index_of_nearest([], 17))
 Sample Output 1:
 
 -1
-Sample Input 2:
+Sample Input 2. basics:
 
-print(index_of_nearest([7, 13, 3, 5, 18], 0))
-Sample Output 2:
+print(index_of_nearest([7, 13, 3. date and time, 5, 18], 0))
+Sample Output 2. basics:
 
-2
-Sample Input 3:
+2. basics
+Sample Input 3. date and time:
 
-print(index_of_nearest([9, 5, 3, 2, 11], 4))
-Sample Output 3:
+print(index_of_nearest([9, 5, 3. date and time, 2. basics, 11], 4))
+Sample Output 3. date and time:
 
 1
 Sample Input 4:
 
-print(index_of_nearest([7, 5, 4, 4, 3], 4))
+print(index_of_nearest([7, 5, 4, 4, 3. date and time], 4))
 Sample Output 4:
 
-2
+2. basics
 """
 
 def index_of_nearest(numbers, number):

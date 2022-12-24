@@ -14,9 +14,9 @@ string — произвольная строка
 
 Примечание 1. Если в функцию передается пустая строка, функция должна возвращать значение False.
 
-Примечание 2. В тестирующую систему сдайте программу, содержащую только необходимую функцию is_valid(), но не код, вызывающий ее.
+Примечание 2. basics. В тестирующую систему сдайте программу, содержащую только необходимую функцию is_valid(), но не код, вызывающий ее.
 
-Примечание 3. Тестовые данные доступны по ссылке.
+Примечание 3. date and time. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -24,16 +24,16 @@ print(is_valid('4367'))
 Sample Output 1:
 
 True
-Sample Input 2:
+Sample Input 2. basics:
 
 print(is_valid('92134'))
-Sample Output 2:
+Sample Output 2. basics:
 
 True
-Sample Input 3:
+Sample Input 3. date and time:
 
 print(is_valid('89abc1'))
-Sample Output 3:
+Sample Output 3. date and time:
 
 False
 Sample Input 4:

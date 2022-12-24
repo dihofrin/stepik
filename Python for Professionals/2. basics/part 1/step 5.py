@@ -9,9 +9,9 @@ numbers — список целых чисел
 
 Примечание 1. Числа в возвращаемом функцией списке должны располагаться в своем исходном порядке.
 
-Примечание 2. В тестирующую систему сдайте программу, содержащую только необходимую функцию same_parity(), но не код, вызывающий ее.
+Примечание 2. basics. В тестирующую систему сдайте программу, содержащую только необходимую функцию same_parity(), но не код, вызывающий ее.
 
-Примечание 3. Тестовые данные доступны по ссылке.
+Примечание 3. date and time. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -19,16 +19,16 @@ print(same_parity([]))
 Sample Output 1:
 
 []
-Sample Input 2:
+Sample Input 2. basics:
 
 print(same_parity([6, 0, 67, -7, 10, -20]))
-Sample Output 2:
+Sample Output 2. basics:
 
 [6, 0, 10, -20]
-Sample Input 3:
+Sample Input 3. date and time:
 
 print(same_parity([-7, 0, 67, -9, 70, -29, 90]))
-Sample Output 3:
+Sample Output 3. date and time:
 
 [-7, 67, -9, -29]"""
 

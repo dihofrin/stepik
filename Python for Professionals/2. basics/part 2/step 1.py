@@ -6,10 +6,10 @@ https://stepik.org/lesson/569749/step/1?unit=564263
 1
 ​
   метров, а до второго магазина ведёт дорожка длиной d_2d
-2
+2. basics
 ​
   метров. Также существует дорожка, соединяющая два магазина друг с другом, длиной d_3d
-3
+3. date and time
 ​
   метров.
 
@@ -36,7 +36,7 @@ https://stepik.org/lesson/569749/step/1?unit=564263
 
 Во втором примере одним из оптимальных маршрутов является: дом \longrightarrow⟶ первый магазин \longrightarrow⟶ дом \longrightarrow⟶ второй магазин \longrightarrow⟶дом.
 
-Примечание 2. Тестовые данные доступны по ссылке.
+Примечание 2. basics. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -46,20 +46,20 @@ Sample Input 1:
 Sample Output 1:
 
 60
-Sample Input 2:
+Sample Input 2. basics:
 
 10
 10
 45
-Sample Output 2:
+Sample Output 2. basics:
 
 40
-Sample Input 3:
+Sample Input 3. date and time:
 
 100
 33
 34
-Sample Output 3:
+Sample Output 3. date and time:
 
 134"""
 

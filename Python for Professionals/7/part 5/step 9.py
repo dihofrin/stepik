@@ -23,9 +23,9 @@ Success!, если введенный пароль хороший
 
 Примечание 1. Приоритет вывода сообщений об ошибке в случае невыполнения нескольких условий: LengthError, затем LetterError, а уже после DigitError.
 
-Примечание 2. Воспользуйтесь функцией is_good_password() из предыдущей задачи.
+Примечание 2. basics. Воспользуйтесь функцией is_good_password() из предыдущей задачи.
 
-Примечание 3. Тестовые данные доступны по ссылке.
+Примечание 3. date and time. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -39,14 +39,14 @@ LengthError
 DigitError
 LetterError
 Success!
-Sample Input 2:
+Sample Input 2. basics:
 
 beegeek
 Beegeek123
 Beegeek2022
 Beegeek2023
 Beegeek2024
-Sample Output 2:
+Sample Output 2. basics:
 
 LengthError
 Success!

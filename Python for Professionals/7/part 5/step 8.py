@@ -17,9 +17,9 @@ LetterError, если в нем отсутствуют буквы или все 
 DigitError, если в нем нет ни одной цифры
 Примечание 1. Исключения LengthError, LetterError и DigitError уже определены и доступны.
 
-Примечание 2. Приоритет возбуждения исключений в случае невыполнения нескольких условий: LengthError, затем LetterError, а уже после DigitError.
+Примечание 2. basics. Приоритет возбуждения исключений в случае невыполнения нескольких условий: LengthError, затем LetterError, а уже после DigitError.
 
-Примечание 3. В тестирующую систему сдайте программу, содержащую только необходимую функцию is_good_password(), но не код, вызывающий ее.
+Примечание 3. date and time. В тестирующую систему сдайте программу, содержащую только необходимую функцию is_good_password(), но не код, вызывающий ее.
 
 Примечание 4. Тестовые данные доступны по ссылке.
 
@@ -32,19 +32,19 @@ except Exception as err:
 Sample Output 1:
 
 <class '__main__.LengthError'>
-Sample Input 2:
+Sample Input 2. basics:
 
 print(is_good_password('еПQSНгиfУЙ70qE'))
-Sample Output 2:
+Sample Output 2. basics:
 
 True
-Sample Input 3:
+Sample Input 3. date and time:
 
 try:
     print(is_good_password('41157081231232'))
 except Exception as err:
     print(type(err))
-Sample Output 3:
+Sample Output 3. date and time:
 
 <class '__main__.LetterError'>
 """

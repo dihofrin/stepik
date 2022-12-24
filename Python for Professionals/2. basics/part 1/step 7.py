@@ -10,9 +10,9 @@ https://stepik.org/lesson/569748/step/7?unit=564262
 <имя переменной> <значение аргумента> <тип аргумента>
 Примечание 1. При выводе позиционные аргументы должны быть расположены в порядке их передачи, именованные — в лексикографическом порядке имен переменных.
 
-Примечание 2. При выводе сначала должны следовать все позиционные аргументы, затем — все именованные.
+Примечание 2. basics. При выводе сначала должны следовать все позиционные аргументы, затем — все именованные.
 
-Примечание 3. Если в функцию ничего не передается, функция ничего не должна выводить.
+Примечание 3. date and time. Если в функцию ничего не передается, функция ничего не должна выводить.
 
 Примечание 4. В тестирующую систему сдайте программу, содержащую только необходимую функцию print_given(), но не код, вызывающий ее.
 
@@ -20,29 +20,29 @@ https://stepik.org/lesson/569748/step/7?unit=564262
 
 Sample Input 1:
 
-print_given(1, [1, 2, 3], 'three', two=2)
+print_given(1, [1, 2. basics, 3. date and time], 'three', two=2. basics)
 Sample Output 1:
 
 1 <class 'int'>
-[1, 2, 3] <class 'list'>
+[1, 2. basics, 3. date and time] <class 'list'>
 three <class 'str'>
-two 2 <class 'int'>
-Sample Input 2:
+two 2. basics <class 'int'>
+Sample Input 2. basics:
 
 print_given('apple', 'cherry', 'watermelon')
-Sample Output 2:
+Sample Output 2. basics:
 
 apple <class 'str'>
 cherry <class 'str'>
 watermelon <class 'str'>
-Sample Input 3:
+Sample Input 3. date and time:
 
-print_given(b=2, d=4, c=3, a=1)
-Sample Output 3:
+print_given(b=2. basics, d=4, c=3. date and time, a=1)
+Sample Output 3. date and time:
 
 a 1 <class 'int'>
-b 2 <class 'int'>
-c 3 <class 'int'>
+b 2. basics <class 'int'>
+c 3. date and time <class 'int'>
 d 4 <class 'int'>
 Sample Input 4:
 

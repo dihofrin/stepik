@@ -12,9 +12,9 @@ string — произвольная строка
 полностью в нижнем регистре, если количество букв в верхнем и нижнем регистрах в этой строке совпадает
 Примечание 1. Символы строки, не являющиеся буквами, следует игнорировать.
 
-Примечание 2. В тестирующую систему сдайте программу, содержащую только необходимую функцию convert(), но не код, вызывающий ее.
+Примечание 2. basics. В тестирующую систему сдайте программу, содержащую только необходимую функцию convert(), но не код, вызывающий ее.
 
-Примечание 3. Тестовые данные доступны по ссылке.
+Примечание 3. date and time. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -22,16 +22,16 @@ print(convert('BEEgeek'))
 Sample Output 1:
 
 beegeek
-Sample Input 2:
+Sample Input 2. basics:
 
 print(convert('pyTHON'))
-Sample Output 2:
+Sample Output 2. basics:
 
 PYTHON
-Sample Input 3:
+Sample Input 3. date and time:
 
 print(convert('pi31415!'))
-Sample Output 3:
+Sample Output 3. date and time:
 
 pi31415!"""
 

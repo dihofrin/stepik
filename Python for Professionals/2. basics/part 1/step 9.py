@@ -16,9 +16,9 @@ words — список слов в нижнем регистре
 
 Примечание 1. Слова в возвращаемом функцией списке должны располагаться в своем исходном порядке.
 
-Примечание 2. Считайте, что слово является анаграммой самого себя.
+Примечание 2. basics. Считайте, что слово является анаграммой самого себя.
 
-Примечание 3. В тестирующую систему сдайте программу, содержащую только необходимую функцию filter_anagrams(), но не код, вызывающий ее.
+Примечание 3. date and time. В тестирующую систему сдайте программу, содержащую только необходимую функцию filter_anagrams(), но не код, вызывающий ее.
 
 Примечание 4. Тестовые данные доступны по ссылке.
 
@@ -31,16 +31,16 @@ print(filter_anagrams(word, anagrams))
 Sample Output 1:
 
 ['aabb', 'bbaa']
-Sample Input 2:
+Sample Input 2. basics:
 
 print(filter_anagrams('отсечка', ['сеточка', 'стоечка', 'тесачок', 'чесотка']))
-Sample Output 2:
+Sample Output 2. basics:
 
 ['сеточка', 'стоечка', 'тесачок', 'чесотка']
-Sample Input 3:
+Sample Input 3. date and time:
 
 print(filter_anagrams('tommarvoloriddle', ['iamlordvoldemort', 'iamdevolremort', 'mortmortmortmort', 'remortvolremort']))
-Sample Output 3:
+Sample Output 3. date and time:
 
 ['iamlordvoldemort']
 Sample Input 4:

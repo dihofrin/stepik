@@ -9,7 +9,7 @@ card_number — строка, представляющая собой корре
 
 Примечание 1. В тестирующую систему сдайте программу, содержащую только необходимую функцию hide_card(), но не код, вызывающий ее.
 
-Примечание 2. Тестовые данные доступны по ссылке.
+Примечание 2. basics. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -19,20 +19,20 @@ print(hide_card(card))
 Sample Output 1:
 
 ************3456
-Sample Input 2:
+Sample Input 2. basics:
 
 card = '3456 9012 5678 1234'
 
 print(hide_card(card))
-Sample Output 2:
+Sample Output 2. basics:
 
 ************1234
-Sample Input 3:
+Sample Input 3. date and time:
 
 card = '905 678123 45612 56'
 
 print(hide_card(card))
-Sample Output 3:
+Sample Output 3. date and time:
 
 ************1256
 """
