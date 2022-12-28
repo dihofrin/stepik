@@ -46,5 +46,3 @@ def number_of_frogs(n):
     if n == 1:
         return 77
     return 3 * (number_of_frogs(n-1) - 30)
-
-print(number_of_frogs(10))
