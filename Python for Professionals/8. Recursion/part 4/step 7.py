@@ -40,4 +40,10 @@ Sample Output 3:
 """
 
 def get_all_values(nested_dicts, key):
-    pass
+    result = []
+    if key in nested_dicts:
+        result.append(nested_dicts[key])
+    for k, v in nested_dicts.items():
+        if isinstance(v, dict):
+            result.extend(get_all_values(v, key))
+    return set(result)
