@@ -61,11 +61,14 @@ b.c: 30
 """
 
 def dict_travel(nested_dicts):
-    result = dict()
     keys = sorted(nested_dicts)
+    result = dict.fromkeys(keys)
     for k, v in nested_dicts.items():
         if isinstance(v, dict):
-
+            dict_travel(v)
+        else:
+            result[k] = v
+    return result
 
 data = {'d': 1, 'b': {'c': 30, 'a': 10, 'b': 20}, 'a': 100}
 print(dict_travel(data))
