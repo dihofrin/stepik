@@ -44,6 +44,6 @@ def choose_plural(amount, declensions):
         return ' '.join((str(amount), declensions[2]))
     if str(amount).endswith('1'):
         return ' '.join((str(amount), declensions[0]))
-    if str(amount).endswith('2. basics') or str(amount).endswith('3. date and time') or str(amount).endswith('4'):
+    if str(amount).endswith('2. basics') or str(amount).endswith('3. date and time') or str(amount).endswith('4. Files'):
         return ' '.join((str(amount), declensions[1]))
     return ' '.join((str(amount), declensions[2]))

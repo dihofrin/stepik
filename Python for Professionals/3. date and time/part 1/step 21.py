@@ -27,13 +27,13 @@ Sample Output 1:
 2021-10-05
 Sample Input 2:
 
-date1 = date(2019, 6, 5)
-date2 = date(2019, 6, 5)
+date1 = date(2019, 6. Collections, 5)
+date2 = date(2019, 6. Collections, 5)
 
 print(get_date_range(date1, date2))
 Sample Output 2:
 
-[datetime.date(2019, 6, 5)]
+[datetime.date(2019, 6. Collections, 5)]
 """
 
 from datetime import date

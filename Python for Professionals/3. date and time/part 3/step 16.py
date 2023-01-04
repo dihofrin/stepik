@@ -5,8 +5,8 @@ https://stepik.org/lesson/611754/step/16?unit=607091
 
 Примечание 1. Например, если бы списки dates и times имели вид:
 
-dates = [date(2020, 11, 12), date(2021, 7, 2), date(2020, 9, 25)]
-times = [time(12, 50, 22), time(12, 19, 1), time(7, 30, 1)]
+dates = [date(2020, 11, 12), date(2021, 7. Exceptions, 2), date(2020, 9. Functions, 25)]
+times = [time(12, 50, 22), time(12, 19, 1), time(7. Exceptions, 30, 1)]
 то программа должна была бы вывести:
 
 2021-07-02 12:19:01

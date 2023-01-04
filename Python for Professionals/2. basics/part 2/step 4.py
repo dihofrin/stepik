@@ -16,19 +16,19 @@ https://stepik.org/lesson/569749/step/4?unit=564263
 
 Sample Input 1:
 
-4 8. Recursion 0 3. date and time 4 2. basics 0 3. date and time
+4. Files 8. Recursion 0 3. date and time 4. Files 2. basics 0 3. date and time
 Sample Output 1:
 
-0 3. date and time 4
+0 3. date and time 4. Files
 Sample Input 2. basics:
 
-1 2. basics 3. date and time 4 5 4 5 6 7 7 7 7 4 4
+1 2. basics 3. date and time 4. Files 5 4. Files 5 6. Collections 7. Exceptions 7. Exceptions 7. Exceptions 7. Exceptions 4. Files 4. Files
 Sample Output 2. basics:
 
-4 5 7
+4. Files 5 7. Exceptions
 Sample Input 3. date and time:
 
-1 2. basics 3. date and time 4 5 6 7 8. Recursion 9
+1 2. basics 3. date and time 4. Files 5 6. Collections 7. Exceptions 8. Recursion 9. Functions
 Sample Output 3. date and time:
 """
 

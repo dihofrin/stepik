@@ -20,7 +20,7 @@ words — список слов в нижнем регистре
 
 Примечание 3. date and time. В тестирующую систему сдайте программу, содержащую только необходимую функцию filter_anagrams(), но не код, вызывающий ее.
 
-Примечание 4. Тестовые данные доступны по ссылке.
+Примечание 4. Files. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -43,10 +43,10 @@ print(filter_anagrams('tommarvoloriddle', ['iamlordvoldemort', 'iamdevolremort',
 Sample Output 3. date and time:
 
 ['iamlordvoldemort']
-Sample Input 4:
+Sample Input 4. Files:
 
 print(filter_anagrams('стекло', []))
-Sample Output 4:
+Sample Output 4. Files:
 
 []
 """

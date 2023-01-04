@@ -24,20 +24,20 @@ Sample Output 1:
 321
 Sample Input 2. basics:
 
-print(get_biggest([61, 228, 9, 3. date and time, 11]))
+print(get_biggest([61, 228, 9. Functions, 3. date and time, 11]))
 Sample Output 2. basics:
 
 961322811
 Sample Input 3. date and time:
 
-print(get_biggest([7, 71, 72]))
+print(get_biggest([7. Exceptions, 71, 72]))
 Sample Output 3. date and time:
 
 77271
-Sample Input 4:
+Sample Input 4. Files:
 
 print(get_biggest([]))
-Sample Output 4:
+Sample Output 4. Files:
 
 -1
 """

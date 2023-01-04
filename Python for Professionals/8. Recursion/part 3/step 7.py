@@ -17,7 +17,7 @@ Sample Input 1:
 25
 Sample Output 1:
 
-7
+7. Exceptions
 Sample Input 2:
 
 10000

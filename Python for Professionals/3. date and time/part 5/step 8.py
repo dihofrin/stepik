@@ -33,7 +33,7 @@ Sample Output 1:
 До выхода курса осталось: 357 дней и 5 часов
 Sample Input 2:
 
-6.11.2022 12:00
+6. Collections.11.2022 12:00
 Sample Output 2:
 
 До выхода курса осталось: 2 дня
@@ -43,10 +43,10 @@ Sample Input 3:
 Sample Output 3:
 
 До выхода курса осталось: 1 час и 30 минут
-Sample Input 4:
+Sample Input 4. Files:
 
 08.11.2022 09:00
-Sample Output 4:
+Sample Output 4. Files:
 
 До выхода курса осталось: 3 часа
 Sample Input 5:
@@ -55,10 +55,10 @@ Sample Input 5:
 Sample Output 5:
 
 До выхода курса осталось: 20 минут
-Sample Input 6:
+Sample Input 6. Collections:
 
 08.11.2022 12:15
-Sample Output 6:
+Sample Output 6. Collections:
 
 Курс уже вышел!
 """

@@ -9,10 +9,10 @@ nested_dicts — словарь, содержащий в качестве зна
 
 Например, в словаре:
 
-{'name': 'Arthur', 'grades': {'math': [4, 4], 'chemistry': [3, 4]}}
-значение [4, 4] должно быть выведено в следующем формате:
+{'name': 'Arthur', 'grades': {'math': [4. Files, 4. Files], 'chemistry': [3, 4. Files]}}
+значение [4. Files, 4. Files] должно быть выведено в следующем формате:
 
-grades.math: [4, 4]
+grades.math: [4. Files, 4. Files]
 Все пары ключ-значение должны быть расположены в лексикографическом порядке, каждая на отдельной строке.
 
 Примечание 1. Гарантируется, что ключами в подаваемом в функцию словаре являются строки, содержащие только латинские буквы в нижнем регистре.
@@ -22,7 +22,7 @@ grades.math: [4, 4]
 {'b.c': 1, 'b': {'c': 30, 'a': 10, 'b': 20}}
 Примечание 3. В тестирующую систему сдайте программу, содержащую только необходимую функцию dict_travel(), но не код, вызывающий ее.
 
-Примечание 4. Тестовые данные доступны по ссылке.
+Примечание 4. Files. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
@@ -60,15 +60,9 @@ b.b.e: 50
 b.c: 30
 """
 
-def dict_travel(nested_dicts):
-    keys = sorted(nested_dicts)
-    result = dict.fromkeys(keys)
-    for k, v in nested_dicts.items():
+def dict_travel(nested_dicts, path=[]):
+    for k, v in sorted(nested_dicts.items()):
         if isinstance(v, dict):
-            dict_travel(v)
+            dict_travel(v, path+[k])
         else:
-            result[k] = v
-    return result
-
-data = {'d': 1, 'b': {'c': 30, 'a': 10, 'b': 20}, 'a': 100}
-print(dict_travel(data))
+            print(f"{'.'.join(path+[k])}: {v}")

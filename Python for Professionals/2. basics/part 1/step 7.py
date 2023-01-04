@@ -14,7 +14,7 @@ https://stepik.org/lesson/569748/step/7?unit=564262
 
 Примечание 3. date and time. Если в функцию ничего не передается, функция ничего не должна выводить.
 
-Примечание 4. В тестирующую систему сдайте программу, содержащую только необходимую функцию print_given(), но не код, вызывающий ее.
+Примечание 4. Files. В тестирующую систему сдайте программу, содержащую только необходимую функцию print_given(), но не код, вызывающий ее.
 
 Примечание 5. Тестовые данные доступны по ссылке.
 
@@ -37,17 +37,17 @@ cherry <class 'str'>
 watermelon <class 'str'>
 Sample Input 3. date and time:
 
-print_given(b=2. basics, d=4, c=3. date and time, a=1)
+print_given(b=2. basics, d=4. Files, c=3. date and time, a=1)
 Sample Output 3. date and time:
 
 a 1 <class 'int'>
 b 2. basics <class 'int'>
 c 3. date and time <class 'int'>
-d 4 <class 'int'>
-Sample Input 4:
+d 4. Files <class 'int'>
+Sample Input 4. Files:
 
 print_given()
-Sample Output 4:"""
+Sample Output 4. Files:"""
 
 def print_given(*args, **kwargs):
     for i in args:

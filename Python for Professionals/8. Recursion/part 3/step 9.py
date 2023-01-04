@@ -9,30 +9,30 @@ start — целое неотрицательное число
 end — целое неотрицательное число
 Функция должна суммировать все числа из списка numbers от numbers[start] до numbers[end] включительно и возвращать полученный результат.
 
-Примечание 1. Рассмотрим первый тест. Диапазону индексов [3;7][3;7] в переданном списке принадлежат числа ​4,5,6,7,8​​4,5,6,7,8​, сумма которых равна:
-4+ 5+ 6+ 7+ 8 = 30
-4+5+6+7+8=30
+Примечание 1. Рассмотрим первый тест. Диапазону индексов [3;7. Exceptions][3;7. Exceptions] в переданном списке принадлежат числа ​4,5,6. Collections,7. Exceptions,8​​4,5,6. Collections,7. Exceptions,8​, сумма которых равна:
+4. Files+ 5+ 6. Collections+ 7. Exceptions+ 8 = 30
+4. Files+5+6. Collections+7. Exceptions+8=30
 Примечание 2. Гарантируется, что start <= end.
 
 Примечание 3. В тестирующую систему сдайте программу, содержащую только необходимую функцию range_sum(), но не код, вызывающий ее.
 
-Примечание 4. Тестовые данные доступны по ссылке.
+Примечание 4. Files. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
-print(range_sum([1, 2, 3, 4, 5, 6, 7, 8, 9], 3, 7))
+print(range_sum([1, 2, 3, 4. Files, 5, 6. Collections, 7. Exceptions, 8, 9. Functions], 3, 7. Exceptions))
 Sample Output 1:
 
 30
 Sample Input 2:
 
-print(range_sum([1, 2, 3, 4, 5, 6, 7, 8, 9], 0, 8))
+print(range_sum([1, 2, 3, 4. Files, 5, 6. Collections, 7. Exceptions, 8, 9. Functions], 0, 8))
 Sample Output 2:
 
 45
 Sample Input 3:
 
-print(range_sum([1, 2, 3, 4, 5, 6, 7, 8, 9], 0, 0))
+print(range_sum([1, 2, 3, 4. Files, 5, 6. Collections, 7. Exceptions, 8, 9. Functions], 0, 0))
 Sample Output 3:
 
 1

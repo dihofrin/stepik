@@ -18,7 +18,7 @@ https://stepik.org/lesson/569749/step/8?unit=564263
 
 Sample Input 1:
 
-6
+6. Collections
 ivan-petrov@beegeek.bzz
 petr-ivanov@beegeek.bzz
 ivan-petrov1@beegeek.bzz

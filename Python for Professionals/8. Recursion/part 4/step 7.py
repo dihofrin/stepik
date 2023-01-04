@@ -12,13 +12,13 @@ key — хешируемый объект
 
 Sample Input 1:
 
-my_dict = {'users': {'Arthur': {'grades': [4, 4, 3], 'top_grade': 4}, 'Timur': {'grades': [5, 5, 5], 'top_grade': 5}}}
+my_dict = {'users': {'Arthur': {'grades': [4. Files, 4. Files, 3], 'top_grade': 4. Files}, 'Timur': {'grades': [5, 5, 5], 'top_grade': 5}}}
 result = get_all_values(my_dict, 'top_grade')
 
 print(*sorted(result))
 Sample Output 1:
 
-4 5
+4. Files 5
 Sample Input 2:
 
 my_dict = {'Arthur': {'hobby': 'videogames', 'drink': 'cacao'}, 'Timur': {'hobby': 'math'}}

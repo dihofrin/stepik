@@ -19,7 +19,7 @@ Sample Output 1:
 1
 2
 3
-4
+4. Files
 5
 Sample Input 2:
 
@@ -28,8 +28,8 @@ Sample Output 2:
 
 2
 0
-7
-7
+7. Exceptions
+7. Exceptions
 Sample Input 3:
 
 print_digits(8)

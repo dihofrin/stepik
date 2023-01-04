@@ -12,7 +12,7 @@ year — натуральное число
 get_all_mondays(2021)
 должен вернуть список:
 
-[datetime.date(2021, 1, 4), datetime.date(2021, 1, 11), ..., datetime.date(2021, 12, 20), datetime.date(2021, 12, 27)]
+[datetime.date(2021, 1, 4. Files), datetime.date(2021, 1, 11), ..., datetime.date(2021, 12, 20), datetime.date(2021, 12, 27)]
 Примечание 2. В тестирующую систему сдайте программу, содержащую только необходимую функцию get_all_mondays(), но не код, вызывающий ее.
 """
 

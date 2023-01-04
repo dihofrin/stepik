@@ -18,7 +18,7 @@ dates — список дат (тип date)
 Таблица форматирования
 Sample Input 1:
 
-dates = [date(1992, 10, 19), date(1991, 12, 6), date(1992, 9, 20)]
+dates = [date(1992, 10, 19), date(1991, 12, 6. Collections), date(1992, 9. Functions, 20)]
 print_good_dates(dates)
 Sample Output 1:
 
@@ -26,7 +26,7 @@ September 20, 1992
 October 19, 1992
 Sample Input 2:
 
-dates = [date(1993, 9, 15), date(2021, 11, 2), date(2000, 7, 7)]
+dates = [date(1993, 9. Functions, 15), date(2021, 11, 2), date(2000, 7. Exceptions, 7. Exceptions)]
 print_good_dates(dates)
 Sample Output 2:
 """

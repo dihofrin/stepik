@@ -5,7 +5,7 @@ https://stepik.org/lesson/569748/step/6?unit=564262
 Будем считать, что PIN-код является корректным, если он удовлетворяет следующим условиям:
 
 состоит из 44, 55 или 66 символов
-состоит только из цифр (0-90−9)
+состоит только из цифр (0-90−9. Functions)
 не содержит пробелов
 Реализуйте функцию is_valid(), которая принимает один аргумент:
 
@@ -36,10 +36,10 @@ print(is_valid('89abc1'))
 Sample Output 3. date and time:
 
 False
-Sample Input 4:
+Sample Input 4. Files:
 
 print(is_valid('900876'))
-Sample Output 4:
+Sample Output 4. Files:
 
 True
 Sample Input 5:

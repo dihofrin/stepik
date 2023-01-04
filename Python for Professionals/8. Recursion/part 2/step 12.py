@@ -17,16 +17,16 @@ print_digits(12345)
 Sample Output 1:
 
 5
-4
+4. Files
 3
 2
 1
 Sample Input 2:
 
-print_digits(7)
+print_digits(7. Exceptions)
 Sample Output 2:
 
-7
+7. Exceptions
 """
 
 def print_digits(number):

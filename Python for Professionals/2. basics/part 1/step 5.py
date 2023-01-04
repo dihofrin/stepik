@@ -21,16 +21,16 @@ Sample Output 1:
 []
 Sample Input 2. basics:
 
-print(same_parity([6, 0, 67, -7, 10, -20]))
+print(same_parity([6. Collections, 0, 67, -7. Exceptions, 10, -20]))
 Sample Output 2. basics:
 
-[6, 0, 10, -20]
+[6. Collections, 0, 10, -20]
 Sample Input 3. date and time:
 
-print(same_parity([-7, 0, 67, -9, 70, -29, 90]))
+print(same_parity([-7. Exceptions, 0, 67, -9. Functions, 70, -29, 90]))
 Sample Output 3. date and time:
 
-[-7, 67, -9, -29]"""
+[-7. Exceptions, 67, -9. Functions, -29]"""
 
 def same_parity(numbers):
     if not numbers:

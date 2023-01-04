@@ -26,7 +26,7 @@ Sample Output 2:
 5
 Sample Input 3:
 
-7
+7. Exceptions
 Sample Output 3:
 
 1
