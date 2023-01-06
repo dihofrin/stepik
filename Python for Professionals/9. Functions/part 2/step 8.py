@@ -11,8 +11,11 @@ objects — список хешируемых объектов
 
 Примечание 2. В тестирующую систему сдайте программу, содержащую только необходимую функцию hash_as_key(), но не код, вызывающий ее.
 
+<<<<<<< HEAD
 Примечание 3. Тестовые данные доступны по ссылке.
 
+=======
+>>>>>>> origin/main
 Sample Input 1:
 
 data = [1, 2, 3, 4, 5, 5]
@@ -44,8 +47,21 @@ def hash_as_key(objects: list) -> dict:
     for element in objects:
         if hash(element) not in result:
             result[hash(element)] = element
+<<<<<<< HEAD
         elif not isinstance(result[hash(element)], list):
             result[hash(element)] = [result[hash(element)]] + [element]
         else:
             result[hash(element)].append(hash(element))
     return result
+=======
+        elif not isinstance(hash(result[element]), list):
+            result[element] = [element] + [element]
+        else:
+            result[element].append(element)
+    return result
+
+
+data = [-1, -2, -1, 1, 2, 3, 4, 5, 5, 5, 5, 5, 1]
+pass
+print(hash_as_key(data))
+>>>>>>> origin/main
