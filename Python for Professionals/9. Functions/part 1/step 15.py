@@ -41,3 +41,11 @@ Sample Output 3:
 """
 
 def zip_longest(*args, fill=None):
+    m = len(max(args, key=len))
+    for i in args:
+        while len(i) != m:
+            i.append(fill)
+    result = []
+    for i in zip(*args):
+        result.append(i)
+    return result
