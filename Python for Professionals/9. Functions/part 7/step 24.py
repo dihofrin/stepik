@@ -13,20 +13,10 @@ ValueError, если аргумент является целым числом, 
 
 def takes_positive(func):
     def wrapper(*args, **kwargs):
-        try:
-            all(isinstance(i, int) for i in args)
-            return func(*args, **kwargs)
-        except TypeError as err:
-            return type(err)
+        a = list(args) + list(kwargs.values())
+        if not all(isinstance(i, int) for i in a):
+            raise TypeError
+        if not all(i>0 for i in a):
+            raise ValueError
+        return func(*args, **kwargs)
     return wrapper
-
-
-@takes_positive
-def positive_sum(*args):
-    return sum(args)
-
-
-try:
-    print(positive_sum('10', 20, 10))
-except Exception as err:
-    print(type(err))
