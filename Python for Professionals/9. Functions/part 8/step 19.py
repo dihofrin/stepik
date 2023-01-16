@@ -17,17 +17,7 @@ def repeat(times):
         @wraps(func)
         def wrapper(*args, **kwargs):
             for _ in range(times):
-                return func(*args, **kwargs)
+                f = func(*args, **kwargs)
+            return f
         return wrapper
     return decorator
-
-
-@repeat(10)
-def add(a, b):
-    '''sum of two numbers'''
-    return a + b
-
-
-print(add.__name__)
-print(add.__doc__)
-print(add(10, b=20))
