@@ -16,27 +16,27 @@ https://stepik.org/lesson/570050/step/20?unit=564593
 
 Примечание 3. Рассмотрим второй тест, в котором подается последовательность из пяти дат. Определим элементы результирующего списка:
 
-первый элемент — 11, количество дней между датами 06.10.2021 и 05.10.2021
-второй элемент — 33, количество дней между датами 05.10.2021 и 08.10.2021
-третий элемент — 11, количество дней между датами 08.10.2021 и 09.10.2021
-четвертый элемент — 22, количество дней между датами 09.10.2021 и 07.10.2021
+первый элемент — 11, количество дней между датами 06.10. Iterators & generatoes.2021 и 05.10. Iterators & generatoes.2021
+второй элемент — 33, количество дней между датами 05.10. Iterators & generatoes.2021 и 08.10. Iterators & generatoes.2021
+третий элемент — 11, количество дней между датами 08.10. Iterators & generatoes.2021 и 09.10. Iterators & generatoes.2021
+четвертый элемент — 22, количество дней между датами 09.10. Iterators & generatoes.2021 и 07.10. Iterators & generatoes.2021
 Примечание 4. Files. Тестовые данные доступны по ссылке.
 
 Sample Input 1:
 
-05.10.2021 06.10.2021 07.10.2021 08.10.2021 09.10.2021
+05.10. Iterators & generatoes.2021 06.10. Iterators & generatoes.2021 07.10. Iterators & generatoes.2021 08.10. Iterators & generatoes.2021 09.10. Iterators & generatoes.2021
 Sample Output 1:
 
 [1, 1, 1, 1]
 Sample Input 2:
 
-06.10.2021 05.10.2021 08.10.2021 09.10.2021 07.10.2021
+06.10. Iterators & generatoes.2021 05.10. Iterators & generatoes.2021 08.10. Iterators & generatoes.2021 09.10. Iterators & generatoes.2021 07.10. Iterators & generatoes.2021
 Sample Output 2:
 
 [1, 3, 1, 2]
 Sample Input 3:
 
-05.10.2021
+05.10. Iterators & generatoes.2021
 Sample Output 3:
 
 []

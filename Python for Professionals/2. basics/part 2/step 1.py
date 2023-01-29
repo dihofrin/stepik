@@ -40,7 +40,7 @@ https://stepik.org/lesson/569749/step/1?unit=564263
 
 Sample Input 1:
 
-10
+10. Iterators & generatoes
 20
 30
 Sample Output 1:
@@ -48,8 +48,8 @@ Sample Output 1:
 60
 Sample Input 2. basics:
 
-10
-10
+10. Iterators & generatoes
+10. Iterators & generatoes
 45
 Sample Output 2. basics:
 

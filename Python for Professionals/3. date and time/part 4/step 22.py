@@ -19,12 +19,12 @@ https://stepik.org/lesson/570050/step/22?unit=564593
 
 Sample Input 1:
 
-10:00
+10. Iterators & generatoes:00
 12:35
 Sample Output 1:
 
-10:00 - 10:45
-10:55 - 11:40
+10. Iterators & generatoes:00 - 10. Iterators & generatoes:45
+10. Iterators & generatoes:55 - 11:40
 11:50 - 12:35
 Sample Input 2:
 
@@ -33,7 +33,7 @@ Sample Input 2:
 Sample Output 2:
 
 09:00 - 09:45
-09:55 - 10:40
+09:55 - 10. Iterators & generatoes:40
 Sample Input 3:
 
 11:00

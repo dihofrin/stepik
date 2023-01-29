@@ -18,7 +18,7 @@ dates — список дат (тип date)
 Таблица форматирования
 Sample Input 1:
 
-dates = [date(1992, 10, 19), date(1991, 12, 6. Collections), date(1992, 9. Functions, 20)]
+dates = [date(1992, 10. Iterators & generatoes, 19), date(1991, 12, 6. Collections), date(1992, 9. Functions, 20)]
 print_good_dates(dates)
 Sample Output 1:
 

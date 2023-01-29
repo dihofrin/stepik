@@ -39,7 +39,7 @@ Sample Output 2:
 До выхода курса осталось: 2 дня
 Sample Input 3:
 
-08.11.2022 10:30
+08.11.2022 10. Iterators & generatoes:30
 Sample Output 3:
 
 До выхода курса осталось: 1 час и 30 минут

@@ -13,12 +13,12 @@ dates — список дат (тип date)
 
 Sample Input 1:
 
-dates = [date(2021, 10, 5), date(1992, 6. Collections, 10), date(2012, 2, 23), date(1995, 10, 12)]
+dates = [date(2021, 10. Iterators & generatoes, 5), date(1992, 6. Collections, 10. Iterators & generatoes), date(2012, 2, 23), date(1995, 10. Iterators & generatoes, 12)]
 
 print(get_min_max(dates))
 Sample Output 1:
 
-(datetime.date(1992, 6. Collections, 10), datetime.date(2021, 10, 5))
+(datetime.date(1992, 6. Collections, 10. Iterators & generatoes), datetime.date(2021, 10. Iterators & generatoes, 5))
 Sample Input 2:
 
 print(get_min_max([]))

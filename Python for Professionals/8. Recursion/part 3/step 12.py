@@ -16,7 +16,7 @@ b — неотрицательное целое число
 
 Sample Input 1:
 
-print(recursive_sum(10, 22))
+print(recursive_sum(10. Iterators & generatoes, 22))
 Sample Output 1:
 
 32

@@ -19,7 +19,7 @@ https://stepik.org/lesson/571244/step/4?unit=565785
 Sample Input 1:
 
 01.11.2021
-10.11.2021
+10. Iterators & generatoes.11.2021
 Sample Output 1:
 
 02.11.2021

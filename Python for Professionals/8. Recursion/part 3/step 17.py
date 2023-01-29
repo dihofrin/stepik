@@ -42,14 +42,14 @@ Sample Output 1:
 16
 Sample Input 2:
 
-10
+10. Iterators & generatoes
 Sample Output 2:
 
-10
+10. Iterators & generatoes
 5
 0
 5
-10
+10. Iterators & generatoes
 Sample Input 3:
 
 1
