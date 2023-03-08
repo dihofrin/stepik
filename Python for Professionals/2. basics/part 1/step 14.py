@@ -42,5 +42,11 @@ Sample Output 4. Files:
 -1
 """
 
+
 def get_biggest(numbers):
-    pass
+    if not numbers:
+        return -1
+    m = max(numbers, key=lambda x: len(str(x)))
+    l = sorted(numbers, key=lambda x: str(x) * m, reverse=True)
+    return int(''.join(str(i) for i in l))
+
