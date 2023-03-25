@@ -13,11 +13,11 @@ https://stepik.org/lesson/569749/step/5?unit=564263
 Программа должна сгруппировать все числа из натуральной последовательности от 11 до nn по сумме их цифр и определить длину группы, содержащей наибольшее количество чисел.
 
 Примечание 1. Рассмотрим третий тест, в котором n=20n=20. Запишем последовательность чисел от 11 до 2020:
-1, 2. basics, 3. date and time, 4. Files, 5, 6. Collections, 7. Exceptions, 8. Recursion, 9. Functions, 10. Iterators & generatoes, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
-1,2. basics,3. date and time,4. Files,5,6. Collections,7. Exceptions,8. Recursion,9. Functions,10. Iterators & generatoes,11,12,13,14,15,16,17,18,19,20
+1, 2. basics, 3. date and time, 4. Files, 5, 6. Collections, 7. Exceptions, 8. Recursion, 9. Functions, 10. Iterators & generators, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+1,2. basics,3. date and time,4. Files,5,6. Collections,7. Exceptions,8. Recursion,9. Functions,10. Iterators & generators,11,12,13,14,15,16,17,18,19,20
 Сгруппируем полученные числа по сумме их цифр:
-(1,10. Iterators & generatoes), (2. basics,11, 20), (3. date and time,12), (4. Files,13), (5, 14), (6. Collections, 15), (7. Exceptions, 16), (8. Recursion, 17), (9. Functions, 18), (19)
-(1,10. Iterators & generatoes),(2. basics,11,20),(3. date and time,12),(4. Files,13),(5,14),(6. Collections,15),(7. Exceptions,16),(8. Recursion,17),(9. Functions,18),(19)
+(1,10. Iterators & generators), (2. basics,11, 20), (3. date and time,12), (4. Files,13), (5, 14), (6. Collections, 15), (7. Exceptions, 16), (8. Recursion, 17), (9. Functions, 18), (19)
+(1,10. Iterators & generators),(2. basics,11,20),(3. date and time,12),(4. Files,13),(5,14),(6. Collections,15),(7. Exceptions,16),(8. Recursion,17),(9. Functions,18),(19)
 
 Итак, длина группы с наибольшим количеством чисел равна 33.
 

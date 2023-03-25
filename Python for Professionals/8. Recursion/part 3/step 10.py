@@ -35,7 +35,7 @@ Sample Output 2:
 1
 Sample Input 3:
 
-print(get_pow(2, 10. Iterators & generatoes))
+print(get_pow(2, 10. Iterators & generators))
 Sample Output 3:
 
 1024

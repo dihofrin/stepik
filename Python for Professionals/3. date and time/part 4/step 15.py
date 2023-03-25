@@ -33,7 +33,7 @@ Sample Input 3:
 01.11.2021
 Sample Output 3:
 
-31.10. Iterators & generatoes.2021
+31.10. Iterators & generators.2021
 02.11.2021
 """
 

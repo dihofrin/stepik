@@ -40,12 +40,12 @@ Sample Output 2:
 
 05.11.2021
 07.11.2021
-10. Iterators & generatoes.11.2021
+10. Iterators & generators.11.2021
 14.11.2021
 19.11.2021
 25.11.2021
 02.12.2021
-10. Iterators & generatoes.12.2021
+10. Iterators & generators.12.2021
 19.12.2021
 29.12.2021
 """

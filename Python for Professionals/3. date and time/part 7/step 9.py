@@ -12,7 +12,7 @@ https://stepik.org/lesson/570049/step/9?unit=564592
 
 Sample Input 1:
 
-2021-12-10. Iterators & generatoes
+2021-12-10. Iterators & generators
 Sample Output 1:
 
 Friday

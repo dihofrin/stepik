@@ -19,13 +19,13 @@ words = ['россия', 'Австрия', 'австралия', 'РумыниЯ
 print(spell(*words))
 Sample Output 1:
 
-{'р': 7. Exceptions, 'а': 9. Functions, 'у': 10. Iterators & generatoes, 'к': 5}
+{'р': 7. Exceptions, 'а': 9. Functions, 'у': 10. Iterators & generators, 'к': 5}
 Sample Input 2. basics:
 
 print(spell('Математика', 'История', 'химия', 'биология', 'Информатика'))
 Sample Output 2. basics:
 
-{'м': 10. Iterators & generatoes, 'и': 11, 'х': 5, 'б': 8. Recursion}
+{'м': 10. Iterators & generators, 'и': 11, 'х': 5, 'б': 8. Recursion}
 Sample Input 3. date and time:
 
 words = ['fruit', 'football', 'February', 'forest', 'Family']
