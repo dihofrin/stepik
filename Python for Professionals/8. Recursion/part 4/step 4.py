@@ -13,7 +13,7 @@ nested_lists — список, элементами которого являю�
 
 Sample Input 1:
 
-my_list = [1, [4. Files, 4. Files], 2, [1, [2, 10. Iterators & generatoes]]]
+my_list = [1, [4. Files, 4. Files], 2, [1, [2, 10. Iterators & generators]]]
 
 print(recursive_sum(my_list))
 Sample Output 1:

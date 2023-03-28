@@ -14,7 +14,7 @@ busy_patricia5,patriciasmith@bk.ru,07/11/2021 08:07
 
 Например, пользователь с электронной почтой c3po@gmail.com несколько раз менял имя:
 
-C=3PO,c3po@gmail.com,16/11/2021 17:10. Iterators & generatoes
+C=3PO,c3po@gmail.com,16/11/2021 17:10. Iterators & generators
 C3PO,c3po@gmail.com,16/11/2021 17:15
 C-3PO,c3po@gmail.com,16/11/2021 17:24
 Из этих трех записей в итоговый файл должна быть записана только одна — самая свежая:

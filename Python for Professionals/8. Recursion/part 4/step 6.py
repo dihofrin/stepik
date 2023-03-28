@@ -16,7 +16,7 @@ key — хешируемый объект
 
 Sample Input 1:
 
-data = {'firstName': 'Тимур', 'lastName': 'Гуев', 'birthDate': {'day': 10. Iterators & generatoes, 'month': 'October', 'year': 1993}, 'address': {'streetAddress': 'Часовая 25, кв. 127', 'city': {'region': 'Московская область', 'type': 'город', 'cityName': 'Москва'}, 'postalCode': '125315'}}
+data = {'firstName': 'Тимур', 'lastName': 'Гуев', 'birthDate': {'day': 10. Iterators & generators, 'month': 'October', 'year': 1993}, 'address': {'streetAddress': 'Часовая 25, кв. 127', 'city': {'region': 'Московская область', 'type': 'город', 'cityName': 'Москва'}, 'postalCode': '125315'}}
 
 print(get_value(data, 'cityName'))
 Sample Output 1:

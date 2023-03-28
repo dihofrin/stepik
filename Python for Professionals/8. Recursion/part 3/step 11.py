@@ -35,7 +35,7 @@ n — неотрицательное целое число
 
 Sample Input 1:
 
-print(get_fast_pow(2, 10. Iterators & generatoes))
+print(get_fast_pow(2, 10. Iterators & generators))
 Sample Output 1:
 
 1024

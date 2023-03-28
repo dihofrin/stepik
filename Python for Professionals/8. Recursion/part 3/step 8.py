@@ -30,7 +30,7 @@ Sample Output 1:
 141
 Sample Input 2:
 
-print(number_of_frogs(10. Iterators & generatoes))
+print(number_of_frogs(10. Iterators & generators))
 Sample Output 2:
 
 629901

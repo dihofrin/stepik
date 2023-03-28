@@ -21,10 +21,10 @@ Sample Output 1:
 []
 Sample Input 2. basics:
 
-print(same_parity([6. Collections, 0, 67, -7. Exceptions, 10. Iterators & generatoes, -20]))
+print(same_parity([6. Collections, 0, 67, -7. Exceptions, 10. Iterators & generators, -20]))
 Sample Output 2. basics:
 
-[6. Collections, 0, 10. Iterators & generatoes, -20]
+[6. Collections, 0, 10. Iterators & generators, -20]
 Sample Input 3. date and time:
 
 print(same_parity([-7. Exceptions, 0, 67, -9. Functions, 70, -29, 90]))

@@ -36,7 +36,7 @@ Sample Input 2:
 15.02.1524
 29.02.2017
 27.05.1528
-13.10. Iterators & generatoes.1736
+13.10. Iterators & generators.1736
 40.06.431
 31.07.5200
 29.02.2016

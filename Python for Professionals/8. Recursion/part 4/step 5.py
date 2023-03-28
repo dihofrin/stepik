@@ -29,12 +29,12 @@ Sample Output 1:
 [3, 4. Files, 5, 6. Collections, 7. Exceptions, 8]
 Sample Input 2:
 
-my_list = [10. Iterators & generatoes, 20, 30, 40, 50]
+my_list = [10. Iterators & generators, 20, 30, 40, 50]
 
 print(linear(my_list))
 Sample Output 2:
 
-[10. Iterators & generatoes, 20, 30, 40, 50]
+[10. Iterators & generators, 20, 30, 40, 50]
 """
 
 def linear(nested_list):

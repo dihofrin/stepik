@@ -27,7 +27,7 @@ Sample Output 1:
 Sample Input 2:
 
 5
-Иван Петров 14.10. Iterators & generatoes.1995
+Иван Петров 14.10. Iterators & generators.1995
 Петр Сергеев 29.04.1992
 Сергей Романов 01.01.1994
 Роман Григорьев 01.01.1994
