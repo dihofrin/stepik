@@ -43,6 +43,16 @@ a = int(input())
 
 import re
 import sys
-pattern = r"([\r\t\f\v])*\s*\"{3}.*\s*.*\"{3}^|# .+"
+
+pattern1 = r'""".+?"""\n *'
+pattern2 = r'^ *#.+?$\n'
+pattern3 = r'  # .+'
 code = sys.stdin.read()
-print(re.sub(pattern,'', string=code, flags=re.M))
+
+
+code = re.sub(pattern1,'', string=code, flags=re.S)
+code = re.sub(pattern2,'', string=code, flags=re.M)
+code = re.sub(pattern3,'', string=code)
+
+print(code)
+
