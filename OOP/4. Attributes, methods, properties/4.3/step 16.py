@@ -28,20 +28,37 @@ draw_board() — метод, печатающий шахматное поле, �
 
 class Knight:
 
+    cells = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8}
+
     def __init__(self, horizontal, vertical, color):
-        self.horizontal = horizontal
-        self.vertical = vertical
+        self.horizontal = ord(horizontal) - 94
+        self.vertical = int(vertical)-1
         self.color = color
 
     def get_char(self):
-        pass
+        return 'N'
 
     def can_move(self, horizontal, vertical):
-        pass
+        return abs(self.horizontal - horizontal) * abs(self.vertical - vertical) == 2
 
     def move_to(self, horizontal, vertical):
-        pass
+        if self.can_move(horizontal, vertical):
+            self.horizontal = horizontal
+            self.vertical = vertical
 
     def draw_board(self):
-        pass
+        board = [['.'] * 8 for _ in range(8)]
+        for i in range(8):
+            for j in range(8):
+                if self.can_move(i, j):
+                    board[i][j] = '*'
+                if i == self.horizontal and j == self.vertical:
+                        board[i][j] = self.get_char()
+        for row in board:
+            print(*row, sep='')
 
+
+knight = Knight('c', 3, 'white')
+
+print(knight.color, knight.get_char())
+print(knight.horizontal, knight.vertical)
