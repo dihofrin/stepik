@@ -20,25 +20,17 @@ from copy import deepcopy
 class SequenceZip:
 
     def __init__(self, *args):
-        self.args = zip(*args)
-        self.index = -1
+        self.args = deepcopy(args)
 
     def __len__(self):
-        yield len(deepcopy(tuple(self.args)))
+        return min((len(i) for i in self.args), default=0)
 
     def __iter__(self):
-        yield from deepcopy(self.args)
+        yield from zip(*self.args)
 
-    def __next__(self):
-        s = deepcopy(self.args)
-        self.index += 1
-        if self.index >= len(s):
-            raise StopIteration
-        return s[self.index]
 
     def __getitem__(self, item):
-        return tuple(self.args)[item]
+        for index, elem in enumerate(zip(*self.args)):
+            if index == item:
+                return elem
 
-many_large_sequences = [range(100000) for _ in range(100)]
-sequencezip = SequenceZip(*many_large_sequences)
-print(sequencezip[99999])
