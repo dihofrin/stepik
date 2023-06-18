@@ -13,37 +13,25 @@ data — словарь, определяющий начальный набор 
 
 Примечание 1. Экземпляр класса AttrDict не должен зависеть от словаря, на основе которого он был создан. Другими словами, если исходный словарь изменится, то экземпляр класса AttrDict измениться  не должен.
 """
-from copy import deepcopy
+
 class AttrDict:
 
-    def __init__(self, data=None):
-        if data:
-            self.__dict__ = data
+    def __init__(self, data={}):
+        self.data = dict(data) or {}
 
     def __getattr__(self, item):
-        if item not in self.data:
-            raise AttributeError
         return self.data[item]
 
     def __iter__(self):
-        yield from self.__dict__
+        yield from self.data
 
     def __len__(self):
-        return len(self.__dict__)
+        return len(self.data)
 
     def __setitem__(self, key, item):
-        if key not in self.__dict__:
-            self.__dict__[key] = item
+        self.data[key] = item
 
     def __getitem__(self, item):
-        return self.__dict__[item]
+        return self.data[item]
 
 
-
-d = AttrDict()
-d.name = 'Leonardo da Vinci'
-
-try:
-    print(d['name'])
-except KeyError:
-    print('Ключ отсутствует')
