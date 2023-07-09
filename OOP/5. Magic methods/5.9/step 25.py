@@ -15,4 +15,17 @@ hash_function — хеш-функция, по умолчанию равняет�
 """
 
 def limited_hash(left, right, hash_function=hash):
-    pass
+    def func(obj):
+        r = range(left, right+1)
+        if hash_function(obj) in r:
+            return hash_function(obj)
+        return left + (hash_function(obj)-right-1)%(right-left+1)
+    return func
+
+
+# better solution
+
+# def limited_hash(left, right, hash_function=hash):
+#     def func(obj):
+#         return left + (hash_function(obj)-right-1)%(right-left+1)
+#     return func

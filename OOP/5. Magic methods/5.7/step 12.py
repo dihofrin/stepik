@@ -19,9 +19,8 @@ number — число в римской системе счисления. На�
 Примечание 1. Гарантируется, что из римского числа всегда вычитается строго меньшее римское число.
 """
 
+
 class RomanNumeral:
-
-
     ROMAN = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000, 'IV': 4, 'IX': 9, 'XL': 40, 'XC': 90,
              'CD': 400, 'CM': 900}
 
@@ -39,29 +38,45 @@ class RomanNumeral:
                 num += RomanNumeral.ROMAN[self.number[i:i + 2]]
                 i += 2
             else:
-                # print(i)
                 num += RomanNumeral.ROMAN[self.number[i]]
                 i += 1
         return num
 
     def __eq__(self, other):
-        return self.number == other.number
+        if isinstance(other, RomanNumeral):
+            return self.number == other.number
+        return NotImplemented
 
     def __gt__(self, other):
-        return int(self.number) > int(other.number)
+        if isinstance(other, RomanNumeral):
+            return int(self) > int(other)
+        return NotImplemented
 
     def __ge__(self, other):
-        return int(self.number) >= int(other.number)
-
+        if isinstance(other, RomanNumeral):
+            return int(self) >= int(other)
+        return NotImplemented
 
     def __add__(self, other):
-        return RomanNumeral.__int__(self.number) + int(other.number)
+        result = RomanNumeral.to_roman(int(self) + int(other))
+        return RomanNumeral(result)
 
     def __sub__(self, other):
-        pass
+        result = RomanNumeral.to_roman(int(self) - int(other))
+        return RomanNumeral(result)
 
+    @staticmethod
+    def to_roman(num):
+        m = ["", "M", "MM", "MMM"]
+        c = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+        x = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+        i = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
-number = RomanNumeral('IV') + RomanNumeral('VIII')
+        thousands = m[num // 1000]
+        hundreds = c[(num % 1000) // 100]
+        tens = x[(num % 100) // 10]
+        ones = i[num % 10]
 
-print(number)
-print(int(number))
+        result = thousands + hundreds + tens + ones
+
+        return result

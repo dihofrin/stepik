@@ -11,19 +11,31 @@ filename — имя файла
 Во время записи в файл было возбуждено исключение <тип исключения>
 """
 
-from copy import deepcopy
 from contextlib import contextmanager
+
 
 @contextmanager
 def safe_write(filename):
-    file_c = deepcopy(filename)
-    file = open(filename, 'w')
+    f = open(filename, 'w')
+    x = open(filename + 'r', 'w')
     try:
-        yield file
+        x = x.write(f)
+        yield f
     except Exception as e:
-        print(f'Во время записи в файл было возбуждено исключение {e}')
-        return file_c
-    except:
-        raise
+        print(f'Во время записи в файл было возбуждено исключение {type(e).__name__}')
+        f = f.write(x)
+        return f
+    finally:
+        x.close()
+        f.close()
 
 
+with safe_write('undertale.txt') as file:
+    file.write('Тень от руин нависает над вами, наполняя вас решительностью\n')
+
+with safe_write('undertale.txt') as file:
+    print('Под весёлый шорох листвы вы наполняетесь решительностью', file=file)
+    raise ValueError
+
+with open('undertale.txt') as file:
+    print(file.read())

@@ -11,8 +11,16 @@ https://stepik.org/lesson/794484/step/18?unit=797232
 Примечание 2. Не забывайте, что декоратор не должен поглощать возвращаемое значение декорируемой функции, а также должен уметь декорировать функции с произвольным количеством позиционных и именованных аргументов.
 """
 
-from functools import wraps
-
-def recwiz(func):
-    @functools.wraps(func)
+def recviz(func):
+    tabs = -1
     def wrapper(*args, **kwargs):
+        nonlocal tabs
+        tabs += 1
+        a = [repr(i) for i in args]
+        kwa = [f'{k}={repr(v)}' for k, v in kwargs.items()]
+        print(f'{"    "*tabs}-> {func.__name__}({", ".join((a + kwa))})')
+        f = func(*args, **kwargs)
+        print(f'{"    "*tabs}<- {repr(f)}')
+        tabs -= 1
+        return f
+    return wrapper
