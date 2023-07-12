@@ -23,10 +23,8 @@ is_empty() — метод, возвращающий True, если итерат�
 class LoopTracker:
 
     def __init__(self, iterable):
-        self.iterable = iterable
+        self.iterable = tuple(iterable)
         self.count = -1
-        self._first = self.iterable[0]
-        self._last = self.iterable[-1]
         self._empty_accesses = 0
 
     @property
@@ -41,14 +39,16 @@ class LoopTracker:
     def first(self):
         if not self.iterable:
             raise AttributeError('Исходный итерируемый объект пуст')
-        return self._first
+        return self.iterable[0]
 
     @property
     def last(self):
-        return self._last
+        if self.count < 0:
+            raise AttributeError('Последнего элемента нет')
+        return self.iterable[self.count]
 
     def is_empty(self):
-        return self.count < len(self.iterable)
+        return self.count >= len(self.iterable) -1
 
     def __iter__(self):
         return self
@@ -57,17 +57,10 @@ class LoopTracker:
         self.count += 1
         if self.count >= len(self.iterable):
             self._empty_accesses += 1
+            self.count -= 1
             raise StopIteration
         if self.count == 0:
             self._first = self.iterable[self.count]
         self._last = self.iterable[self.count]
         return self.iterable[self.count]
 
-
-loop_tracker = LoopTracker([1, 2])
-
-print(loop_tracker.is_empty())
-next(loop_tracker)
-print(loop_tracker.is_empty())
-next(loop_tracker)
-print(loop_tracker.is_empty())
