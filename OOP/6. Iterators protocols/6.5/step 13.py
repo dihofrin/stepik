@@ -11,28 +11,23 @@ deep — булево значение, по умолчанию равняетс
 Параметр deep должен определять состояние вложенных структур коллекции data после завершения блока with. Если он имеет значение False, контекстный менеджер должен возвращать в исходное состояние только саму коллекцию data, не затрагивая ее вложенные структуры. Например, если data является двумерным списком и внутри блока with произошло изменение одного из его вложенных списков, то этот вложенный список должен сохранить свое новое состояние, даже если последующие операции внутри блока with приведут к возбуждению исключения и возврату коллекции data в исходное состояние. Если же параметр deep имеет значение True, контекстный менеджер должен возвращать в исходное состояние не только саму коллекцию data, но и ее вложенные структуры.
 """
 
-from copy import deepcopy
+from copy import deepcopy, copy
 class Atomic:
 
     def __init__(self, data, deep=False):
         self.data = data
-        self._data = deepcopy(data)
-        self.deep = deep
+        self.data_copy = deepcopy(self.data) if deep else copy(self.data)
 
     def __enter__(self):
-        return self.data
-
+        return self.data_copy
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if exc_type:
-            self.data = self._data
-        return self._data
+            return True
+        else:
+            if isinstance(self.data_copy, list):
+                self.data[:] = self.data_copy
+            elif isinstance(self.data_copy, set | dict):
+                self.data.clear()
+                self.data.update(self.data_copy)
 
-numbers = [1, 2, 3, 4, 5]
-
-with Atomic(numbers) as atomic:
-    atomic.append(6)
-    atomic[2] = 0
-    del atomic[100]           # обращение по несуществующему индексу
-
-print(numbers)
