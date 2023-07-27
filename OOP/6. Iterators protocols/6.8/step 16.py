@@ -14,6 +14,7 @@ default — значение по умолчанию. Если не переда
 Некорректное значение
 """
 
+
 class NonNegativeInteger:
 
     def __init__(self, name, default=None):
@@ -23,17 +24,14 @@ class NonNegativeInteger:
     def __get__(self, instance, owner):
         if self._name in instance.__dict__:
             return instance.__dict__[self._name]
+        elif self.default is not None:
+            instance.__dict__[self._name] = self.default
+            return instance.__dict__[self._name]
         else:
             raise AttributeError('Атрибут не найден')
 
     def __set__(self, owner, value):
-        owner.__dict__[self._name] = value
-
-class Student:
-    score = NonNegativeInteger('score', 0)
-
-student = Student()
-
-print(student.score)
-student.score = 0
-print(student.score)
+        if isinstance(value, int) and value > -1:
+            owner.__dict__[self._name] = value
+        else:
+            raise ValueError('Некорректное значение')

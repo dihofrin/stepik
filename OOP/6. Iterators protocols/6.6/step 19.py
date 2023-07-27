@@ -13,29 +13,18 @@ filename — имя файла
 
 from contextlib import contextmanager
 
-
 @contextmanager
 def safe_write(filename):
-    f = open(filename, 'w')
-    x = open(filename + 'r', 'w')
+    x = open(filename+'r', 'w')
     try:
-        x = x.write(f)
-        yield f
-    except Exception as e:
-        print(f'Во время записи в файл было возбуждено исключение {type(e).__name__}')
-        f = f.write(x)
-        return f
+        yield x
+        x.close()
+        x = open(filename+'r', 'r')
+        f = open(filename, 'w')
+        for line in x:
+            f.write(line)
+        f.close()
+    except Exception as error:
+        print(f'Во время записи в файл было возбуждено исключение {type(error).__name__}')
     finally:
         x.close()
-        f.close()
-
-
-with safe_write('undertale.txt') as file:
-    file.write('Тень от руин нависает над вами, наполняя вас решительностью\n')
-
-with safe_write('undertale.txt') as file:
-    print('Под весёлый шорох листвы вы наполняетесь решительностью', file=file)
-    raise ValueError
-
-with open('undertale.txt') as file:
-    print(file.read())
