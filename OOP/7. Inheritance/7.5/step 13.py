@@ -48,17 +48,22 @@ from abc import ABC, abstractmethod
 class Validator(ABC):
 
     @abstractmethod
-    def validate(self):
+    def validate(self, *args):
         pass
 
     def __set_name__(self, cls, attr):
         self._attr = attr
 
-    def __get__(self, obj, cls):
-        if self._attr in obj.__dict__:
-            return obj.__dict__[self._attr]
-        else:
-            raise AttributeError('Атрибут не существует')
+    def __set__(self, instance, value):
+        instance.__dict__[self._attr] = value
+
+
+    def __get__(self, instance, owner):
+        if instance is None:
+            return self
+        if self._attr in instance.__dict__:
+            return instance.__dict__[self._attr]
+        raise AttributeError('Атрибут не найден')
 
 class Number(Validator):
 
@@ -66,17 +71,19 @@ class Number(Validator):
         self.minvalue = minvalue
         self.maxvalue = maxvalue
 
-    def __set__(self, obj, value):
-        self.validate(obj)
-
+    def __set__(self, instance, value):
+        if self.validate(value):
+            instance.__dict__[self._attr] = value
 
     def validate(self, obj):
-        if not isinstance(obj, int | float):
+        if not isinstance(obj, (int | float)):
             raise TypeError('Устанавливаемое значение должно быть числом')
-        if obj < self.minvalue:
+        if self.minvalue is not None and self.minvalue > obj:
             raise ValueError(f'Устанавливаемое число должно быть больше или равно {self.minvalue}')
-        if obj > self.maxvalue:
+        if self.maxvalue and obj > self.maxvalue:
             raise ValueError(f'Устанавливаемое число должно быть меньше или равно {self.maxvalue}')
+        return True
+
 
 class String(Validator):
 
@@ -85,22 +92,18 @@ class String(Validator):
         self.maxsize = maxsize
         self.predicate = predicate
 
+    def __set__(self, instance, value):
+        if self.validate(value):
+            instance.__dict__[self._attr] = value
+
 
     def validate(self, obj):
         if not isinstance(obj, str):
             raise TypeError('Устанавливаемое значение должно быть строкой')
-        if len(obj) < self.minsize:
+        if self.minsize and len(obj) < self.minsize:
             raise ValueError(f'Длина устанавливаемой строки должна быть больше или равна {self.minsize}')
-        if len(obj) > self.maxsize:
-            raise ValueError(f'Длина устанавливаемой строки должна быть меньше или равна  {self.maxsize}')
-        if not self.predicate:
+        if self.maxsize and len(obj) > self.maxsize:
+            raise ValueError(f'Длина устанавливаемой строки должна быть меньше или равна {self.maxsize}')
+        if self.predicate and not self.predicate(obj):
             raise ValueError('Устанавливаемая строка не удовлетворяет дополнительным условиям')
-
-class Student:
-    age = Number(18, 99)
-
-try:
-    student = Student()
-    student.age = 16
-except ValueError as error:
-    print(error)
+        return True
