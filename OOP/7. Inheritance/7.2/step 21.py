@@ -17,15 +17,26 @@ save() — метод, сбрасывающий отслеживание. Пос
 
 class FieldTracker:
 
-    def base(self, arg):
-        return self.__dicta__[arg]
+    def __init__(self):
+        self.changed_dict = {}
 
-    def has_changed(self, arg=False):
-        return arg
+    def __setattr__(self, key, value):
+        if key in self.__dict__ and key not in self.changed_dict:
+            self.changed_dict[key] = self.__dict__[key]
+        self.__dict__[key] = value
+
+    def base(self, arg):
+        if self.has_changed(arg):
+            return self.changed_dict[arg]
+        return self.__dict__[arg]
+
+    def has_changed(self, arg):
+        return arg in self.changed_dict
 
     def changed(self):
-        return self.__dict__
+        return self.changed_dict
 
     def save(self):
-        return self
+        self.changed_dict = {}
+
 
